@@ -60,10 +60,10 @@ PRODUCT_PACKAGES += \
    
 # libtinyalsa & audio.usb.default
 PRODUCT_PACKAGES += \
-        tinyalsa \
-        libtinyalsa \
-        audio_policy.default \
-        audio.usb.default
+       tinyalsa \
+       libtinyalsa \
+       audio_policy.default \
+       audio.usb.default
        
 # Hostapd & WIFI
 PRODUCT_PACKAGES += \
@@ -72,6 +72,15 @@ PRODUCT_PACKAGES += \
         wpa_supplicant \
         wpa_cli \
         libwpa_client
+
+# Weather widget
+PRODUCT_PACKAGES += LockClock
+
+# Torch
+PRODUCT_PACKAGES += OmniTorch
+
+# Sim tool Kit
+PRODUCT_PACKAGES += Stk
 
 # Misc
 PRODUCT_PACKAGES += com.android.future.usb.accessory

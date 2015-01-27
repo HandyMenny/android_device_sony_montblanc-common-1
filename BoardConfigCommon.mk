@@ -61,6 +61,7 @@ USE_OPENGL_RENDERER := true
 COMMON_GLOBAL_CFLAGS += -DEGL_NEEDS_FNW -DBOARD_EGL_NEEDS_LEGACY_FB -DSCREENSHOT_CLIENT_STRIDE_HACK 
 BOARD_HAVE_PIXEL_FORMAT_INFO := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
+BOARD_EGL_SKIP_FIRST_DEQUEUE := true
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
@@ -68,8 +69,12 @@ EXTENDED_FONT_FOOTPRINT := true
 # STE healthd HAL
 BOARD_HAL_STATIC_LIBRARIES := libhealthd.montblanc
 
+# Lights
+TARGET_PROVIDES_LIBLIGHTS := true
+
 # Custom boot
 BOARD_CUSTOM_BOOTIMG_MK := device/sony/montblanc-common/custombootimg.mk
+TARGET_RELEASETOOLS_EXTENSIONS := device/sony/montblanc-common/releasetools
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01000000

@@ -103,9 +103,11 @@ PRODUCT_PACKAGES += \
         libsbc \
         hciattach
 
-ADDITIONAL_DEFAULT_PROPERTIES += \
-        ro.secure=0 \
-        ro.adb.secure=0
+# Run adbd as root
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+
+# Default USB configuration
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += persist.sys.usb.config=mtp
 
 # Custom init scripts
 PRODUCT_COPY_FILES += \

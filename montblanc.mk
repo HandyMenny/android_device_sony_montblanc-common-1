@@ -49,7 +49,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
         frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
         frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-        frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml
+        frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:system/etc/media_codecs_google_video_le.xml
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
@@ -132,6 +132,3 @@ PRODUCT_COPY_FILES += \
         device/sony/montblanc-common/config/sensor00_f11_sensor0.idc:system/usr/idc/sensor00_f11_sensor0.idc \
         device/sony/montblanc-common/config/synaptics_rmi4_i2c.idc:system/usr/idc/synaptics_rmi4_i2c.idc
 
-# OpenDelta
-PRODUCT_PROPERTY_OVERRIDES += ro.delta.version=VERSION
-PRODUCT_PACKAGES += OpenDelta

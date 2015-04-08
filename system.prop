@@ -40,7 +40,7 @@ persist.audio.hp=true
 ro.sound.driver=alsa
 
 # Use HighEnd graphics with lowram devices
-#persist.sys.force_highendgfx=true
+persist.sys.force_highendgfx=true
 
 # Awesome Player
 persist.sys.media.use-awesome=true
